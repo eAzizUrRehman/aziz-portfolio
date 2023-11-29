@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border select-none;
+  }
+}
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .container {
+    @apply max-w-[1000px] px-10 mx-auto;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#94a3b8] rounded-full;
+  }
+  ::-webkit-scrollbar-track:hover {
+    @apply bg-white;
+  }
+  .gradient {
+    background: linear-gradient(-45deg, #36454f 0%, #000000 100%);
+  }
+}
