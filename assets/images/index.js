@@ -1,8 +1,18 @@
-export { default as logoBlack } from "./logo-black.svg";
-export { default as logoWhite } from "./logo-white.svg";
-export { default as githubIcon } from "./github-icon.svg";
-export { default as replitIcon } from "./replit-icon.svg";
+export { default as logoWhite } from './logo-white.svg'
+export { default as githubIcon } from './github-icon.svg'
+export { default as replitIcon } from './replit-icon.svg'
 
-export { default as creativePulse } from "./creative-pulse.png";
-export { default as vueNotus } from "./vue-notus.png";
-export { default as messagingApp } from "./messaging-app.png";
+export { default as creativePulse } from './creative-pulse.png'
+export { default as vueNotus } from './vue-notus.png'
+export { default as messagingApp } from './messaging-app.png'
+
+export { default as analogClock } from './analog-clock.png'
+export { default as countdownTimer } from './countdown-timer.png'
+export { default as dictionaryApp } from './dictionary-app.png'
+export { default as digitalClock } from './digital-clock.png'
+export { default as passwordGenerator } from './password-generator.png'
+export { default as popupModal } from './popup-modal.png'
+export { default as weatherApp } from './weather-app.png'
+export { default as qrGenerator } from './qr-generator.png'
+export { default as recipeApp } from './recipe-app.png'
+export { default as registrationForm } from './registration-form.png'

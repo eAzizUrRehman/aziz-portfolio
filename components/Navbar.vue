@@ -1,17 +1,17 @@
 <template>
-  <header class="w-full md:py-10 sm:py-6 xs:py-3 xxs:py-2 py-1">
-    <div class="w-full gradient">
-      <div class="container w-full mx-auto flex justify-between items-center">
+  <header class="w-full py-4 xxs:py-5 xs:py-6 sm:py-8 md:py-10">
+    <div class="gradient w-full">
+      <div class="container mx-auto flex w-full items-center justify-between">
         <NuxtLink to="/">
           <img
             loading="lazy"
             :src="logo"
             alt="logo"
             width=""
-            class="hover:opacity-70 md:w-48 sm:w-40 xs:w-32 xxs:w-24 w-20"
+            class="w-20 hover:opacity-70 xxs:w-24 xs:w-32 sm:w-40 md:w-48"
           />
         </NuxtLink>
-        <nav class="flex gap-4">
+        <nav class="flex items-center gap-4">
           <ul v-for="link in navAndFooterLinks" :key="link.id">
             <li class="cursor-pointer">
               <a :href="link.url" target="_blank">
@@ -19,8 +19,7 @@
                   loading="lazy"
                   :src="link.icon"
                   alt=""
-                  width="30"
-                  class="ml-3 hover:opacity-70"
+                  class="w-5 hover:opacity-70 xs:w-6 sm:w-7 md:w-9"
                 />
               </a>
             </li>
@@ -35,13 +34,13 @@
 export default {
   computed: {
     logo() {
-      return this.$store.state.logo;
+      return this.$store.state.logo
     },
     navAndFooterLinks() {
-      return this.$store.state.navAndFooterLinks;
-    },
-  },
-};
+      return this.$store.state.navAndFooterLinks
+    }
+  }
+}
 </script>
 
 <style scoped></style>

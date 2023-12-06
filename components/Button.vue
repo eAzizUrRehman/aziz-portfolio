@@ -1,6 +1,6 @@
 <template>
   <button
-    class="gradient lg:px-4 md:px-3.5 sm:px-3 xs:px-2.5 xxs:px-2 px-1.5 lg:py-3 md:py-2.5 sm:py-2 xs:py-1.5 xxs:py-1 py-0.5 lg:text-2xl md:text-xl sm:text-lg xs:text-base xxs:text-sm text-xs md:rounded-xl sm:rounded-lg xs:rounded-md xxs:rounded rounded-sm hover:opacity-70"
+    class="gradient rounded-sm border-[0.1px] border-white border-opacity-20 px-1.5 py-0.5 text-xs hover:opacity-70 xxs:rounded xxs:px-2 xxs:py-1 xxs:text-sm xs:rounded-md xs:px-2.5 xs:py-1.5 xs:text-base sm:rounded-lg sm:px-3 sm:py-2 sm:text-lg md:rounded-xl md:px-3.5 md:py-2.5 md:text-xl lg:px-4 lg:py-3 lg:text-2xl"
   >
     <a :href="url" target="_blank">
       {{ text }}
@@ -13,12 +13,12 @@ export default {
   props: {
     text: {
       type: String,
-      required: true,
+      required: true
     },
     url: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>
